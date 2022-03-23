@@ -1,0 +1,27 @@
+1-For Heroku, the free subscription is only available for the creation of 5 apps..beyond that, it is payable
+2-In the free app, 500MB space per account is allotted
+3-3 modes of execution in Heroku-Heroku Git,GitHub,Container Registry(like Docker)
+***Generate a Procfile in the local system
+3.1-Heroku Git-Install Heroku CLI (for the local system to facilitate commn. b/n Heroku Cloud platform and my local system)
+   -heroku/7.59.2 win32-x64 node-v12.21.0
+3.2-After CLI installation,open the Anaconda prompt (in admin mode-preferred) and go the workin directory
+3.3-Install the git in local system-pip install GitPython (to push the code from local git to Heroku git)
+3.4-Check for git installation-type git at the command prompt
+3.5-Connect to the Heroku account(cloud)->heroku login--will be redirected to the heroku login page and the login is activated in the heroku CLI
+3.6-Initialise/Instantiate the git->git init->a .git file is generated
+3.7-Type Git status->all modified/new files that are added or to be added to the local git are displayed
+3.8-To point the cloud heroku git created to the local working directory(or to establish a link b/n the two)->heroku git:remote -a appname
+   -will lead to the msg in CLI-set git remote heroku to https://git.heroku.com/flipkart-scrapping-project.git
+3.9-To add the files into the heroku git->git add .
+3.10-To commit/check-in the added files in the heroku git->git commit -am "any text" (-am->a-app,m-message)
+3.11-Push all the code/files committed to the heroku mater branch in heroku git->git push heroku master
+3.12-This will lead to the requirements.txt file being run, tools installed and the app.py file executed and will
+     generate a global url-https://appname.herokuapp.com/
+3.13-If unable to recall the url, go the app on Heroku and click on Open App
+3.14-If any changes made in the code/related files, the code needs to be re-committed to the heroku git
+    -run 3.9 to 3.11 again
+3.15-To clone the app from heroku git to local machine->heroku git:clone -a appname
+3.16-To go back to a previous version of the run/code used in heroku git, go to the Activity tab and select the version to be rolled back
+
+github token/pwd-
+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
